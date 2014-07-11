@@ -6,8 +6,12 @@ app = Flask(__name__)
 def hello():
   return "Hello Sundaytoz"
 
-
 @app.route("login")
 def login():
     value = 1+2
     return "login ok"
+
+@app.route("logout")
+def logout():
+    return "logout ok"
+
